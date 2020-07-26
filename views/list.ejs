@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div>
+
+        <% if (whichDay === "Saturday" || whichDay === "Sunday") { %>
+            <h1 style="color: rgb(68, 202, 68)">It's <%= whichDay %>!</h1>
+        <% } else { %>
+            <h1 style="color: red">It's <%=whichDay%>!</h1>
+        <% } %>
+
+        <ul>
+            <% for ( var i = 0; i < newListItems.length; i++ ) { %>
+                <li><%= newListItems[i] %></li>
+            <% } %>
+        </ul>
+        <form action="/" method="post">
+            <input type="text" name="newItem">
+            <button type="submit">Add</button>
+        
+        </form>
+        
+    </div>       
+</body>
+</html>
