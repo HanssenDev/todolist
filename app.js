@@ -3,14 +3,19 @@ const bodyParser = require("body-parser");
 const app = express();
 let items = [];
 
+// Use EJS
 app.set("view engine", "ejs");
 
+// Use bodyParser
 app.use(bodyParser.urlencoded({extended: true}));
 
+// Server static files from the public folder
+app.use(express.static("public"));
+
 app.get("/", function(req, res) {
-
+   
     let today = new Date();
-
+    
     const options = {
         weekday: "long",
         day: "numeric",
