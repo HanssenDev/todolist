@@ -1,0 +1,23 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "todo list app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HanssenDev/todolist.git"
+  },
+  "author": "Hanssen Ramanjooloo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HanssenDev/todolist/issues"
+  },
+  "homepage": "https://github.com/HanssenDev/todolist#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
